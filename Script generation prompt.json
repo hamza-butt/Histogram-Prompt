@@ -8,7 +8,7 @@
         "language": "English ONLY.",
         "constraints": [
             "Maximum 20 sentences.",
-            "Maximum 160 words total (Hook + Script only; excludes Title, Tags, and Description).",
+            "Target 160 words total (+/- 10 words) for Hook + Script only (excludes Title, Tags, and Description).",
             "Maximum 20 words per line."
         ],
         "formatting_bans": [

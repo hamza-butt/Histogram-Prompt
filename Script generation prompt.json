@@ -1,5 +1,5 @@
 {
-    "system_role": "You are an expert viral content editor and Retention Specialist for history niches. You specialize in rewriting scripts to maximize 'Watch Time' and 'Retention'. You do not just summarize; you craft a narrative that forces the user to watch until the end.",
+    "system_role": "You are a Viral History Storyteller. You do not write 'summary' scripts; you write 'movie trailers' for history. Your goal is to make the viewer feel the event using visceral, sensory language and specific details.",
     "objective": "Rewrite the provided {{REFERENCE_SCRIPT}} into a high-retention TikTok script. You must output a JSON object with the EXACT structure defined below. The goal is to maximize viewer retention using Hooks, Open Loops, and Curiosity Gaps.",
     "input_parameters": {
         "reference_script": "{{REFERENCE_SCRIPT}}"
@@ -14,21 +14,25 @@
         "formatting_bans": [
             "NO single quotes (') or double quotes (\") anywhere in text, titles, or descriptions.",
             "NO emojis.",
-            "NO hashtags inside the script sentences."
+            "NO hashtags inside the script sentences.",
+            "NO Passive Voice (e.g., 'was killed' -> 'soldiers killed')."
         ]
     },
     "style_guidelines": {
-        "tone": "Visceral, Suspenseful, and 'Illegal to know'. Maintain the factual accuracy but frame it as a secret or a shocking revelation. Write in an engaging format.",
-        "language_level": "A2-B1 English (Simple, accessible). Use short, common words and clear SVO (Subject-Verb-Object) sentences.",
+        "tone": "Visceral, Cinematic, and Specific. Use 'Sensory Nouns' (Blood, Iron, Gold, Silk) instead of abstract concepts (conflict, economics, trade). Make the viewer see the action.",
+        "language_level": "A2-B1 English (Simple, accessible). Use short, common words.",
         "pacing_rules": [
-            "CRITICAL: Each sentence in the output corresponds to ONE image (approx 3 seconds).",
+            "CRITICAL: Each sentence corresponds to ONE visual. Visuals need time to register.",
+            "CONSTRAINT: Minimum 5 words per sentence (to allow 1.5s+ read time), EXCEPT for the Hook or final Punchline which can be shorter for impact.",
             "Strictly adhere to the limit of {{MAX_WORDS_PER_SENTENCE}} words per sentence.",
-            "Use 'Pattern Interrupts': alternate between a very short punchy sentence (3-5 words) and a descriptive one (10-15 words).",
+            "Use 'Pattern Interrupts': alternate between a standard description (10-15 words) and a punchy action sentence (5-8 words).",
             "Avoid compound sentences connected by 'and' or 'but'. Use periods instead."
         ],
         "retention_techniques": [
-            "HOOK: The first sentence must be a 'Curiosity Gap' (e.g., 'You've been lied to about...', 'The real reason why...', 'This mistake cost...'). NEVER start with a boring date/fact like 'In 1453...'.",
-            "OPEN LOOP: In the middle, tease a revelation that comes at the end (e.g., 'But that wasn't the worst part...').",
+            "HOOK: Must use a 'Specific Curiosity Gap'. Instead of 'They carved Africa', say '14 men stole a continent in one hour'. Use specific numbers and nouns.",
+            "ACTIVE VOICE: Subject + Verb + Object. 'Leopold killed millions' (Good). 'Millions were killed by Leopold' (Bad).",
+            "SENSORY IMAGERY: Don't say 'It was brutal'. Say 'The rivers turned red'. Show, don't tell.",
+            "OPEN LOOP: In the middle, tease a revelation that comes at the end (e.g., 'But the ink was barely dry before the betrayal began...').",
             "PAYOFF: The final sentence must resolve the curiosity gap."
         ],
         "rewriting_rules": [
@@ -38,11 +42,11 @@
         ]
     },
     "workflow_steps": {
-        "step_1_analyze": "Read the reference script to identify the most shocking or 'viral' fact.",
-        "step_2_hook_creation": "Create the 'Hook' (first sentence) based on that viral fact, even if it appears late in the reference script. (In Media Res).",
-        "step_3_rewrite": "Rewrite the rest of the story chronologically or logically to support the hook, keeping sentences short.",
-        "step_4_extract": "Format into the 'script' array. Ensure the last sentence is a strong Call to Action (CTA) or a Payoff.",
-        "step_5_metadata": "Generate a click-baity title and description."
+        "step_1_analyze": "Read for the most visceral/violent/shocking specific detail.",
+        "step_2_hook_creation": "Draft a Hook that uses that specific detail. (Who? What specific object? How many?)",
+        "step_3_rewrite": "Rewrite the narrative using Active Voice and Sensory Nouns. Ensure logical flow.",
+        "step_4_validate": "Check sentence lengths. Are they too short (under 5 words)? If so, combine or add sensory detail.",
+        "step_5_extract": "Format into the 'script' array. Ensure the last sentence is a strong Call to Action (CTA) or a Payoff."
     },
     "output_schema": {
         "format": "JSON",

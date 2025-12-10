@@ -12,17 +12,17 @@
         "step_4_thumbnail": "Select the most visually shocking or emotional scene to create a specialized 'thumbnailPrompt'."
     },
     "global_visual_style": {
-        "aesthetic": "Cinematic Digital Art / Dark Fantasy Realism. Think 'League of Legends' splash art meets 'Game of Thrones' concept art. NOT grainy photojournalism.",
-        "atmosphere": "Epic, dramatic, and slightly stylized. Emphasis on **volumetric lighting**, rim lights, and atmospheric fog. Deep blues (night) contrasting with fierce oranges (fire/torches).",
-        "textures": "Smooth digital painting finish with high definition. 'Unreal Engine 5 render' look.",
-        "lighting": "Cinematic rim lighting (backlighting), bioluminescence or firelight, dramatic shadows. High contrast.",
-        "composition": "Dynamic camera angles (low angle looking up at heroes, wide angle for armies). 9:16 vertical framing."
+        "aesthetic": "Modern Graphic Novel Illustration / Motion Comic Style. Think 'Arcane' meets 'Telltale Games' concept art. Bold ink outlines, stylized realism, expressive character features.",
+        "atmosphere": "Dramatic, moody, and highly stylized. Emphasis on **atmospheric depth** using a strict **Teal & Orange** color grade.",
+        "textures": "Painterly texture with visible brushstrokes BUT defined by sharp, thick ink outlines (Cel-Shaded look). NOT photorealistic.",
+        "lighting": "Cinematic 'Teal & Orange' lighting. Deep cyan/blue shadows heavily contrasted with warm amber/gold key lights (fire, lamps, sunsets).",
+        "composition": "Dynamic camera angles (Low angle hero shots, slightly distorted wide angles). 9:16 vertical framing."
     },
     "prompt_construction_rules": {
-        "natural_language": "Write fluid, descriptive sentences. Flux understands complex descriptions. Do not just list tags.",
-        "flux_formula": "Describe the Subject + The Action + The Environment + The Lighting + The Art Style.",
-        "style_keywords": "Include these keywords in every prompt: 'semi-realistic digital painting, trending on ArtStation, cinematic shading, 8k resolution, dramatic lighting, sharp focus'.",
-        "censorship_safe_words": "Use words like 'fearsome', 'battle-weary', 'shadowy', 'intense', 'ruined' instead of 'gore' or 'blood' to avoid safety filters.",
+        "natural_language": "Write fluid, descriptive sentences. Focus heavily on coloring and line work.",
+        "flux_formula": "Describe the Subject + The Action + The Environment + 'Graphic Novel Style' + 'Teal and Orange Lighting'.",
+        "style_keywords": "Include these keywords in every prompt for consistency: 'graphic novel art, bold ink outlines, cel shaded, teal and orange color palette, trending on ArtStation, vector art aesthetics, cinematic lighting, sharp focus'.",
+        "censorship_safe_words": "Use words like 'fearsome', 'battle-weary', 'shadowy', 'intense', 'ruined' instead of 'gore' or 'blood'.",
         "text_ban": "Strictly enforce NO TEXT inside the image. Add ' --no text' at the end of every prompt."
     },
     "output_schema": {

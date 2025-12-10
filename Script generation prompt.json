@@ -15,7 +15,8 @@
             "NO single quotes (') or double quotes (\") anywhere in text, titles, or descriptions.",
             "NO emojis.",
             "NO hashtags inside the script sentences.",
-            "NO Passive Voice (e.g., 'was killed' -> 'soldiers killed')."
+            "NO Passive Voice (e.g., 'was killed' -> 'soldiers killed').",
+            "NO 'newline' characters (\\n) inside the script strings. Each sentence must be its own separate string in the array."
         ]
     },
     "style_guidelines": {
@@ -46,7 +47,7 @@
         "step_2_hook_creation": "Create the Hook.",
         "step_3_draft_scenes": "Draft the body. ensuring you cover ALL 4-5 events with specific sensory details. Do not skip the middle.",
         "step_4_word_count_check": "CRITICAL: If the script is under 140 words, you MUST add more sensory details to the middle scenes. (e.g. describe the weapons, the uniforms, the setting).",
-        "step_5_extract": "Format into the 'script' array."
+        "step_5_extract": "Format into the 'script' array. SPLIT EVERY SENTENCE into a new string."
     },
     "output_schema": {
         "format": "JSON",

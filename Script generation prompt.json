@@ -7,8 +7,8 @@
     "global_constraints": {
         "language": "English ONLY.",
         "constraints": [
-            "Maximum 20 sentences.",
-            "Target 160 words total (+/- 10 words) for Hook + Script only (excludes Title, Tags, and Description).",
+            "CRITICAL: Target 150-170 words total. The script MUST be around 1 minute spoken duration.",
+            "CONSTRAINT: Minimum 15 sentences to reach the word count.",
             "Maximum 20 words per line."
         ],
         "formatting_bans": [
@@ -19,34 +19,34 @@
         ]
     },
     "style_guidelines": {
-        "tone": "Visceral, Cinematic, and Specific. Use 'Sensory Nouns' (Blood, Iron, Gold, Silk) instead of abstract concepts (conflict, economics, trade). Make the viewer see the action.",
-        "language_level": "A2-B1 English (Simple, accessible). Use short, common words.",
+        "tone": "Visceral, Cinematic, and Specific. Use 'Sensory Nouns' (Blood, Iron, Gold, Silk) instead of abstract concepts. Make the viewer see the action.",
+        "language_level": "A2-B1 English. Simple words, but MANY details.",
         "pacing_rules": [
             "CRITICAL: Each sentence corresponds to ONE visual. Visuals need time to register.",
-            "CONSTRAINT: Minimum 5 words per sentence (to allow 1.5s+ read time), EXCEPT for the Hook or final Punchline which can be shorter for impact.",
+            "CONSTRAINT: Minimum 5 words per sentence (to allow 1.5s+ read time), EXCEPT for the Hook or final Punchline.",
             "Strictly adhere to the limit of {{MAX_WORDS_PER_SENTENCE}} words per sentence.",
             "Use 'Pattern Interrupts': alternate between a standard description (10-15 words) and a punchy action sentence (5-8 words).",
             "Avoid compound sentences connected by 'and' or 'but'. Use periods instead."
         ],
         "retention_techniques": [
-            "HOOK: Must use a 'Specific Curiosity Gap'. Instead of 'They carved Africa', say '14 men stole a continent in one hour'. Use specific numbers and nouns.",
-            "ACTIVE VOICE: Subject + Verb + Object. 'Leopold killed millions' (Good). 'Millions were killed by Leopold' (Bad).",
-            "SENSORY IMAGERY: Don't say 'It was brutal'. Say 'The rivers turned red'. Show, don't tell.",
-            "OPEN LOOP: In the middle, tease a revelation that comes at the end (e.g., 'But the ink was barely dry before the betrayal began...').",
+            "HOOK: Specific Curiosity Gap (e.g., '14 men stole a continent in one hour').",
+            "ACTIVE VOICE: Subject + Verb + Object.",
+            "SENSORY IMAGERY: Show, don't tell.",
+            "EXPANSION: Do NOT summarize effectively. You must 'scene-build'. Instead of saying 'There was war', say 'Cannons fired. Villages burned. Warriors charged.' (3 sentences).",
             "PAYOFF: The final sentence must resolve the curiosity gap."
         ],
         "rewriting_rules": [
             "Simplify vocabulary to A2-B1 level.",
-            "If the reference says 'The massive fortifications ultimately crumbled under the weight of the bombardment', you write: 'The heavy walls fell.' and 'The cannons destroyed them.'",
-            "Do NOT change specific dates or numbers (e.g. keep '1453', '21 years old')."
+            "If the word count is too low, you MUST split one summary sentence into 3 detailed action sentences.",
+            "Do NOT change specific dates or numbers."
         ]
     },
     "workflow_steps": {
-        "step_1_analyze": "Read for the most visceral/violent/shocking specific detail.",
-        "step_2_hook_creation": "Draft a Hook that uses that specific detail. (Who? What specific object? How many?)",
-        "step_3_rewrite": "Rewrite the narrative using Active Voice and Sensory Nouns. Ensure logical flow.",
-        "step_4_validate": "Check sentence lengths. Are they too short (under 5 words)? If so, combine or add sensory detail.",
-        "step_5_extract": "Format into the 'script' array. Ensure the last sentence is a strong Call to Action (CTA) or a Payoff."
+        "step_1_analyze": "Identify 4-5 distinct specific events/scenes in the reference script.",
+        "step_2_hook_creation": "Create the Hook.",
+        "step_3_draft_scenes": "Draft the body. ensuring you cover ALL 4-5 events with specific sensory details. Do not skip the middle.",
+        "step_4_word_count_check": "CRITICAL: If the script is under 140 words, you MUST add more sensory details to the middle scenes. (e.g. describe the weapons, the uniforms, the setting).",
+        "step_5_extract": "Format into the 'script' array."
     },
     "output_schema": {
         "format": "JSON",
